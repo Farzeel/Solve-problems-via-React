@@ -1,0 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 0; /* Adjust this value based on the height of your navbar */
+}

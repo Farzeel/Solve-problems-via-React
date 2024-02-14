@@ -1,0 +1,71 @@
+ nav {
+  background-color: #645b5b; 
+  height: 50px;
+  overflow: hidden;
+} 
+
+
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 16px; /* Padding */
+  text-decoration: none; /* Remove underline */
+}
+
+
+  nav.sticky {
+    position: fixed;
+    top: -50px;
+    width: 100vw;
+    z-index: 33;
+     transform: translateY(100%);
+    transition: transform 0.5s ease-in-out; /* Apply transition for smoother effect */
+  }
+  
+ 
+ 
+
+
+nav li a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+main {
+  height: 100vh; /* Set height to 100 viewport height */
+  background-color: #f2f2f2; /* Background color */
+  padding-top: 50px; /* Padding */
+  box-sizing: border-box; /* Include padding in height */
+  /* margin-top: 47px; */
+}
+.StickyButton{
+  padding: 2px;
+  width: 90px;
+  height: 34px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #937070;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  cursor: pointer;
+}
+footer {
+  height: 100vh; /* Set height to 50 viewport height */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding */
+}
