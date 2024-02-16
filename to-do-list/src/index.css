@@ -1,0 +1,133 @@
+/* Overall styling */
+.todo-app {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  /* justify-content:; */
+  align-items: center;
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+button:disabled{
+  background-color: #68737e;
+  cursor: not-allowed;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Default button style */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+/* Add task button hover effect */
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green */
+}
+
+/* Edit button style */
+.edit {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+.edit:hover {
+  background-color: #0062cc; /* Darker blue */
+}
+
+/* Remove button style */
+.remove {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.remove:hover {
+  background-color: #c82336; /* Darker red */
+}
+
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .todo-app {
+    width: 95%;
+  }
+
+  input[type="text"],
+  button[type="submit"] {
+    width: 100%;
+  }
+  .button {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+}
